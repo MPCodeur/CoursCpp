@@ -1,12 +1,10 @@
-NAME	= MPEcole
+NAME	= newEra
 
 CC	= g++
 
 RM	= rm -f
 
-SRCS	= src/main.cpp	\
-		src/etudiant.cpp \
-		src/classe.cpp
+SRCS	= newEra.cpp
 
 OBJS	= $(SRCS:.cpp=.o)
 
@@ -25,7 +23,7 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-	$(RM) src/*~
+	$(RM) *~
 
 re: fclean all
 
